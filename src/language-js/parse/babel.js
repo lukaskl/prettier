@@ -167,7 +167,7 @@ const parseEstree = createParse(
   "parse",
   appendPlugins(["jsx", "flow", "estree"])
 );
-const parseExpression = createParse("parseExpression", appendPlugins(["jsx"]));
+const parseExpression = createParse("parseExpression", appendPlugins(["jsx", "typescript"]));
 
 // Error codes are defined in
 //  - https://github.com/babel/babel/blob/v7.14.0/packages/babel-parser/src/parser/error-message.js
